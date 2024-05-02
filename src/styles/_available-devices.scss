@@ -1,0 +1,18 @@
+.available-devices {
+    padding: 5.6vw;
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+
+        @media(max-width:768px) {
+            grid-template-columns: 1f 1f;
+        }
+
+        &__item {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
